@@ -48,7 +48,7 @@ class tinyVGG:
     model.add(Activation('relu'))
     model.add(BatchNormalization())
     model.add(Dropout(0.5))
-    model.add(Dense(4))
+    model.add(Dense(7))
     model.add(Activation('softmax'))
     
     return model
